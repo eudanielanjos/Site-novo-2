@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natural Detox Drinks Guide</title>
+
+<style>
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  color: #1f2d1f;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* LANGUAGE SWITCH */
+.lang {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.lang button {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #c8e6c9;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* TEXT */
+h1 {
+  font-size: clamp(26px, 5vw, 36px);
+  margin-bottom: 12px;
+}
+h2 {
+  font-size: clamp(16px, 3.5vw, 20px);
+  color: #3a6b3a;
+  margin-bottom: 24px;
+}
+p, li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* IMAGES */
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.section img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 18px;
+}
+
+/* SECTIONS */
+.section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.section-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+/* LIST */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.button {
+  display: block;
+  max-width: 420px;
+  margin: 50px auto 0;
+  padding: 18px;
+  text-align: center;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lang {
+    text-align: center;
+  }
+  ul {
+    text-align: left;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LANGUAGE -->
+<div class="lang">
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('pt')">PT</button>
+  <button onclick="setLang('es')">ES</button>
+</div>
+
+<!-- IMAGE 1 -->
+<img class="hero-img" src="imagem1.svg" alt="Natural Detox Drinks">
+
+<!-- HEADLINE -->
+<h1 data-en="Natural Detox Juices & Medicinal Drinks Explained"
+    data-pt="Sucos Detox Naturais e Bebidas Medicinais Explicadas"
+    data-es="Jugos Detox Naturales y Bebidas Medicinales Explicadas">
+  Natural Detox Juices & Medicinal Drinks Explained
+</h1>
+
+<h2 data-en="A simple guide with natural drink recipes designed to support daily wellness."
+    data-pt="Um guia simples com receitas naturais para apoiar o bem-estar diário."
+    data-es="Una guía sencilla con recetas naturales para apoyar el bienestar diario.">
+  A simple guide with natural drink recipes designed to support daily wellness.
+</h2>
+
+<p data-en="This guide presents 100 detox juice recipes and medicinal drinks that can be prepared easily at home."
+   data-pt="Este guia apresenta 100 receitas de sucos detox e bebidas medicinais fáceis de preparar em casa."
+   data-es="Esta guía presenta 100 recetas de jugos detox y bebidas medicinales fáciles de preparar.">
+  This guide presents 100 detox juice recipes and medicinal drinks that can be prepared easily at home.
+</p>
+
+<!-- SECTION -->
+<div class="section">
+
+  <!-- IMAGE 2 -->
+  <img src="imagem2.svg" alt="Detox Ingredients">
+
+  <div class="section-text">
+    <ul>
+      <li>Natural detox juice recipes</li>
+      <li>Medicinal drinks with simple ingredients</li>
+      <li>Easy-to-follow preparation steps</li>
+      <li>Ideas for daily wellness routines</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- IMAGE 3 -->
+<img class="hero-img" src="imagem3.svg" alt="Healthy Lifestyle">
+
+<!-- CTA -->
+<a href="https://go.hotmart.com/P103618949K" class="button">
+  Discover the Complete Detox Drink Guide
+</a>
+
+<!-- FOOTER -->
+<div class="footer">
+  This content is for educational purposes only. Results may vary.
+</div>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+    el.innerText = el.getAttribute('data-' + lang);
+  });
+}
+</script>
+
+</body>
+</html>
